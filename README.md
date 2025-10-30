@@ -112,16 +112,22 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 
 ### 📂 Repository Structure
 Waste-Classification/
-│── README.md  ✅ (ya lo tienes)
-│── requirements.txt ✅ (lo que te di)
-│── notebooks/
-│   └── 01_model_training.ipynb ✅ (tu notebook)
-│── data/
-│   └── README.md ✅ (dataset info)
-└── docs/
-    └── Mideterm_slides.pdf ✅ (tu PPT exportado a PDF)
-    └── README.md ✅ (nota que te di)
+│── README.md 
 
+│── requirements.txt
+
+│── notebooks/
+
+│   └── 01_model_training.ipynb 
+
+│── data/
+
+│   └── README.md 
+└── docs/
+
+    └── Mideterm_slides.pdf 
+    
+    └── README.md 
 
 🤖 **AI Usage Log**
 
