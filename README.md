@@ -80,6 +80,7 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | Per-class Precision / Recall | Balanced across all categories |
 | Explainability | Grad-CAM shows correct focus regions |
 
+
 📅 **Project Timeline**
 
 | Week | Task | Milestone |
@@ -91,6 +92,7 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | 14 | Documentation & polish | 📝 Final report |
 | 15 | Presentation | 🎯 Final delivery |
 
+
 ⚠️ **Risks & Mitigation**
 | Risk | Probability | Mitigation |
 |------|------------|-----------|
@@ -98,6 +100,7 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | Not enough data | High | Use Roboflow / synthetic fallback |
 | Overfitting | Medium | Early stopping, dropout |
 | Compute limitations | Low | Google Colab GPU, efficient model |
+
 
 
 🧰 **Required Resources**
@@ -111,25 +114,15 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 
 
 ### 📂 Repository Structure
-
 Waste-Classification/
-
-│── README.md 
-
+│── README.md
 │── requirements.txt
-
 │── notebooks/
-
-│   └── 01_model_training.ipynb 
-
+│   └── 01_model_training.ipynb
 │── data/
-
-│   └── README.md 
+│   └── README.md   (dataset info)
 └── docs/
-
-    └── Mideterm_slides.pdf 
-    
-    └── README.md 
+    └── MD_Tuozzo_Jose_ITAI1378.pdf
 
 🤖 **AI Usage Log**
 
