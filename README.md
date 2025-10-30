@@ -2,8 +2,11 @@
 📦 **Waste Classification Using Computer Vision**
 
 Course: ITAI 1378 – Computer Vision & AI
+
 Student: José Tuozzo
+
 Project Tier: Tier 1 — Image Classification
+
 Tools: PyTorch, Google Colab, EfficientNet-B0, Grad-CAM
 
 🧠 **Project Overview**
