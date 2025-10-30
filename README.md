@@ -1,12 +1,12 @@
 # Midterm---Final-Project-Proposal
-📦 Waste Classification Using Computer Vision
+📦 **Waste Classification Using Computer Vision**
 
 Course: ITAI 1378 – Computer Vision & AI
 Student: José Tuozzo
 Project Tier: Tier 1 — Image Classification
 Tools: PyTorch, Google Colab, EfficientNet-B0, Grad-CAM
 
-🧠 Project Overview
+🧠 **Project Overview**
 
 Proper waste sorting plays a crucial role in sustainable environmental management.
 However, manual sorting is slow, prone to human error, and leads to contamination in recycling streams.
@@ -15,7 +15,7 @@ This project builds a deep-learning based system that classifies waste into six 
 
 🎯 Goal: Develop a vision model capable of identifying waste types to support smart recycling systems and reduce waste contamination.
 
-🚨 Problem Statement
+🚨 **Problem Statement**
 
 Recycling facilities struggle with misclassified waste, causing:
 
@@ -28,7 +28,7 @@ Lower recycling efficiency and environmental impact
 Manual sorting is repetitive, tiring, and inconsistent.
 A reliable automated solution improves both accuracy and operational efficiency.
 
-💡 Proposed Solution
+💡 **Proposed Solution**
 
 Use a transfer-learning-based CNN to classify waste images and provide real-time predictions for sorting systems.
 
@@ -42,7 +42,7 @@ Grad-CAM visualizations to verify model attention
 
 Data augmentation to handle real-world variability
 
-⚙️ Technical Approach
+⚙️ **Technical Approach**
 Component	Choice
 Method	Image Classification
 Model	EfficientNet-B0
@@ -53,7 +53,7 @@ Explainability	Grad-CAM for heatmaps
 Why this model?
 EfficientNet-B0 offers strong accuracy-efficiency tradeoff, ideal for student-level hardware while maintaining competitive performance.
 
-🗂 Dataset Plan
+🗂 **Dataset Plan**
 
 Dataset: TrashNet-style waste classification dataset
 
