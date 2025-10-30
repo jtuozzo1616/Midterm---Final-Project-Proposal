@@ -74,6 +74,7 @@ Metric	Target
 Accuracy	≥ 90%
 Per-class Precision/Recall	Balanced across all categories
 Explainability	Grad-CAM shows correct focus regions
+
 📅 Project Timeline
 Week	Task	Milestone
 10	Dataset preparation & environment setup	✅ Dataset ready
