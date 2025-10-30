@@ -69,12 +69,15 @@ Augmentation: flipping, rotation
 
 If dataset access fails → fallback to synthetic + online public waste-classification datasets.
 
+✅ Success Metrics
+
 | Metric | Target |
 |--------|--------|
 | Accuracy | ≥ 90% |
 | Per-class Precision / Recall | Balanced across all categories |
 | Explainability | Grad-CAM shows correct focus regions |
 
+📅 Project Timeline
 
 | Week | Task | Milestone |
 |------|------|----------|
@@ -85,12 +88,14 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | 14 | Documentation & polish | 📝 Final report |
 | 15 | Presentation | 🎯 Final delivery |
 
+⚠️ Risks & Mitigation
 | Risk | Probability | Mitigation |
 |------|------------|-----------|
 | Low accuracy | Medium | Data augmentation, adjust LR, freezing strategy |
 | Not enough data | High | Use Roboflow / synthetic fallback |
 | Overfitting | Medium | Early stopping, dropout |
 | Compute limitations | Low | Google Colab GPU, efficient model |
+🧰 Required Resources
 
 | Resource | Details |
 |---------|--------|
