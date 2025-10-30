@@ -69,48 +69,48 @@ Augmentation: flipping, rotation
 
 If dataset access fails → fallback to synthetic + online public waste-classification datasets.
 
-✅ Success Metrics
-Metric	Target
-Accuracy	≥ 90%
-Per-class Precision/Recall	Balanced across all categories
-Explainability	Grad-CAM shows correct focus regions
+| Metric | Target |
+|--------|--------|
+| Accuracy | ≥ 90% |
+| Per-class Precision / Recall | Balanced across all categories |
+| Explainability | Grad-CAM shows correct focus regions |
 
-📅 Project Timeline
-Week	Task	Milestone
-10	Dataset preparation & environment setup	✅ Dataset ready
-11	Model training & fine-tuning	✅ Working baseline model
-12	Evaluation & improvements	✅ Achieve accuracy target
-13	Grad-CAM + Demo build	🎥 System demo ready
-14	Documentation & polish	📝 Final report
-15	Presentation	🎯 Final delivery
-⚠️ Risks & Mitigation
-Risk	Probability	Mitigation
-Low accuracy	Medium	Data augmentation, adjust LR, freezing strategy
-Not enough data	High	Use Roboflow / synthetic fallback
-Overfitting	Medium	Early stopping, dropout
-Compute limitations	Low	Google Colab GPU, efficient model
-🧰 Required Resources
 
-Google Colab GPU
+| Week | Task | Milestone |
+|------|------|----------|
+| 10 | Dataset preparation & environment setup | ✅ Dataset ready |
+| 11 | Model training & fine-tuning | ✅ Working baseline model |
+| 12 | Evaluation & improvements | ✅ Achieve accuracy target |
+| 13 | Grad-CAM + Demo build | 🎥 System demo ready |
+| 14 | Documentation & polish | 📝 Final report |
+| 15 | Presentation | 🎯 Final delivery |
 
-PyTorch + Torchvision
+| Risk | Probability | Mitigation |
+|------|------------|-----------|
+| Low accuracy | Medium | Data augmentation, adjust LR, freezing strategy |
+| Not enough data | High | Use Roboflow / synthetic fallback |
+| Overfitting | Medium | Early stopping, dropout |
+| Compute limitations | Low | Google Colab GPU, efficient model |
 
-Roboflow / Dataset hosting
+| Resource | Details |
+|---------|--------|
+| Compute | Google Colab GPU |
+| Frameworks | PyTorch, Torchvision |
+| Explainability | Grad-CAM |
+| Cost | $0 |
 
-Grad-CAM library
 
-Cost: $0
-
-📂 Repository Structure
+### 📂 Repository Structure
 Waste-Classification/
 │── README.md
 │── requirements.txt
 │── notebooks/
 │   └── 01_model_training.ipynb
 │── data/
-│   └── README.md  (dataset info)
+│   └── README.md   (dataset info)
 └── docs/
     └── proposal.pdf
+
 
 🤖 AI Usage Log
 
