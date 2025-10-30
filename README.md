@@ -69,7 +69,7 @@ Augmentation: flipping, rotation
 
 If dataset access fails → fallback to synthetic + online public waste-classification datasets.
 
-✅ Success Metrics
+✅ **Success Metrics**
 
 | Metric | Target |
 |--------|--------|
@@ -77,7 +77,7 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | Per-class Precision / Recall | Balanced across all categories |
 | Explainability | Grad-CAM shows correct focus regions |
 
-📅 Project Timeline
+📅 **Project Timeline**
 
 | Week | Task | Milestone |
 |------|------|----------|
@@ -88,7 +88,7 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | 14 | Documentation & polish | 📝 Final report |
 | 15 | Presentation | 🎯 Final delivery |
 
-⚠️ Risks & Mitigation
+⚠️ **Risks & Mitigation**
 | Risk | Probability | Mitigation |
 |------|------------|-----------|
 | Low accuracy | Medium | Data augmentation, adjust LR, freezing strategy |
@@ -97,7 +97,7 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | Compute limitations | Low | Google Colab GPU, efficient model |
 
 
-🧰 Required Resources
+🧰 **Required Resources**
 
 | Resource | Details |
 |---------|--------|
@@ -119,12 +119,12 @@ Waste-Classification/
     └── proposal.pdf
 
 
-🤖 AI Usage Log
+🤖 **AI Usage Log**
 
 I used ChatGPT to help refine the written proposal structure and clarify the Grad-CAM explanation.
 All model development, code execution, and debugging were performed by me.
 
-🌎 Expected Impact
+🌎 **Expected Impact**
 
 Improves sorting accuracy
 
