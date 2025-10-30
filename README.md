@@ -136,3 +136,24 @@ Supports sustainability initiatives
 Reduces processing waste and contamination
 
 Foundation for future smart recycling bins or robotic sorters
+
+✅ **Quickstart Guide for Running the Project (add to README)**
+### 🚀 How to Run
+
+1) Clone the repository
+
+git clone https://github.com/YOUR_USERNAME/Waste-Classification.git
+cd Waste-Classification
+
+2) Install dependencies  
+
+3) Open the notebook  
+
+4) Run cells in Google Colab or Jupyter.  
+
+5) Upload dataset when prompted or connect to Roboflow dataset.
+
+✅ Model will train  
+✅ Metrics will print  
+✅ Grad-CAM heatmaps will show model focus  
+
