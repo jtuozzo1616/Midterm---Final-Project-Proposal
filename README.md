@@ -95,6 +95,8 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 | Not enough data | High | Use Roboflow / synthetic fallback |
 | Overfitting | Medium | Early stopping, dropout |
 | Compute limitations | Low | Google Colab GPU, efficient model |
+
+
 🧰 Required Resources
 
 | Resource | Details |
