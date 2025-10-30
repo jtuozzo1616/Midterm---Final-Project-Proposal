@@ -120,7 +120,7 @@ Waste-Classification/
 
 │── requirements.txt
 │── notebooks/
-│   └── 01_model_training.ipynb
+│   └── Midterm_FinalProject_JoseTuozzo_code.ipynb
 
 │── data/
 
