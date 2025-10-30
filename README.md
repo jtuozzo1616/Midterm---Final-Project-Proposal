@@ -151,8 +151,10 @@ Foundation for future smart recycling bins or robotic sorters
 
 1) Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/Waste-Classification.git
-cd Waste-Classification
+git clone https://github.com/jtuozzo1616/Midterm---Final-Project-Proposal.git
+cd Midterm---Final-Project-Proposal
+pip install -r requirements.txt
+
 
 2) Install dependencies  
 
