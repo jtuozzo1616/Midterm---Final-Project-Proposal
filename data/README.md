@@ -23,7 +23,7 @@ Public waste classification dataset (similar to TrashNet)
 Used strictly for academic purposes.
 
 If dataset unavailable → fallback to synthetic / Roboflow dataset for reproducibility.
-# Dataset Information
+# Data
 
 - Dataset type: TrashNet-style waste classification
 - Classes: cardboard, glass, metal, paper, plastic, trash
