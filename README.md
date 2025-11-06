@@ -129,6 +129,12 @@ Waste-Classification/
 └── docs/
     └── MD_Tuozzo_Jose_ITAI1378.pdf
 
+### Tier Selection
+**Tier 1 – Image Classification**
+
+Justification: This project focuses on multi-class waste classification using a publicly available dataset and EfficientNet-B0. Training is feasible within course time using Google Colab, making Tier 1 the appropriate scope.
+
+
 🤖 **AI Usage Log**
 
 I used ChatGPT to help refine the written proposal structure and clarify the Grad-CAM explanation.
@@ -165,4 +171,9 @@ pip install -r requirements.txt
 ✅ Model will train  
 ✅ Metrics will print  
 ✅ Grad-CAM heatmaps will show model focus  
+
+### AI Usage Log
+- Used ChatGPT only for formatting suggestions and rubric alignment.
+- All code, training, testing, and model experimentation will be completed by me.
+
 
