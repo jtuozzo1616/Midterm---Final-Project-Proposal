@@ -114,52 +114,26 @@ If dataset access fails → fallback to synthetic + online public waste-classifi
 
 
 ### 📂 Repository Structure
-Waste-Classification/
+Waste-Classification-CV/
+├── README.md                
 
-Midterm---Final-Project-Proposal/
-├── README.md
-├── requirements.txt
-│
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   ├── sample/
-│   └── README.md
-│
-├── models/
-│   ├── pretrained/
-│   ├── trained/
-│   └── README.md
+├── requirements.txt        
+
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_model_training.ipynb
-│   ├── 03_evaluation.ipynb
-│   └── 04_demo.ipynb
+
+│   └── 01_exploration.ipynb  
+
 │
-├── src/
-│   ├── data_processing.py
-│   ├── model.py
-│   ├── train.py
-│   ├── inference.py
-│   └── utils.py
+├── data/
+
+│   └── README.md          
+
 │
-├── results/
-│   ├── images/
-│   │   ├── success_1.jpg
-│   │   ├── success_2.jpg
-│   │   └── failure_1.jpg
-│   ├── metrics.txt
-│   └── visualizations/
-│       ├── confusion_matrix.png
-│       └── training_curves.png
-│
-├── docs/
-│   ├── proposal.pdf
-│   ├── presentation.pdf
-│   └── AI_usage_log.md
-│
-└── demo_video.md
+└── docs/
+
+    └── MD_Tuozzo_Jose_ITAI1378.pdf  
+
 
 
 ### Tier Selection
