@@ -20,6 +20,7 @@ If the final model cannot be uploaded, please include:
 models/
 
 ├── trained/
+
 │ 
   └── best.pth ← (Stored locally or via download link)
   └── README.md
