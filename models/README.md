@@ -26,3 +26,11 @@ models/
   └── best.pth ← (Stored locally or via download link)
   
   └── README.md
+
+## Loading the Model
+
+```python
+model.load_state_dict(
+    torch.load("models/trained/best.pth", map_location="cpu")
+)
+model.eval()
