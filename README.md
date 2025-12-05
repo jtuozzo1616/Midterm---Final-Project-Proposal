@@ -1,186 +1,180 @@
-# Midterm---Final-Project-Proposal
-📦 **Waste Classification Using Computer Vision**
-
+# Waste Classification Using Computer Vision
 Course: ITAI 1378 – Computer Vision & AI
-
 Student: José Tuozzo
-
 Project Tier: Tier 1 — Image Classification
-
 Tools: PyTorch, Google Colab, EfficientNet-B0, Grad-CAM
 
-🧠 **Project Overview**
+---
 
-Proper waste sorting plays a crucial role in sustainable environmental management.
-However, manual sorting is slow, prone to human error, and leads to contamination in recycling streams.
+## PROJECT OVERVIEW
+Proper waste sorting is critical for environmental sustainability. Manual sorting is slow, inconsistent, and often leads to contamination.
 
-This project builds a deep-learning based system that classifies waste into six material categories (cardboard, glass, metal, paper, plastic, trash) using a lightweight and efficient CNN architecture.
+This project builds a deep learning system capable of classifying waste into six categories: cardboard, glass, metal, paper, plastic, trash.
 
-🎯 Goal: Develop a vision model capable of identifying waste types to support smart recycling systems and reduce waste contamination.
+The model uses EfficientNet-B0 transfer learning, balancing performance and computational efficiency.
 
-🚨 **Problem Statement**
+---
 
-Recycling facilities struggle with misclassified waste, causing:
+## GOAL
+Develop a computer vision model that accurately identifies waste types to support smart recycling workflows and reduce contamination.
 
-Contamination of recyclable material streams
+---
 
-Increased labor cost and processing time
+## PROBLEM STATEMENT
+Recycling facilities face major challenges:
 
-Lower recycling efficiency and environmental impact
+- Misclassified waste contaminates recyclable materials
+- Increased manual labor and processing time
+- Lower recycling efficiency
 
-Manual sorting is repetitive, tiring, and inconsistent.
-A reliable automated solution improves both accuracy and operational efficiency.
+Manual sorting is repetitive and inconsistent; an automated system improves accuracy and efficiency.
 
-💡 **Proposed Solution**
+---
 
-Use a transfer-learning-based CNN to classify waste images and provide real-time predictions for sorting systems.
+## PROPOSED SOLUTION
+A transfer-learning-based CNN (EfficientNet-B0) is fine-tuned on a 6‑class waste dataset and evaluated with Grad-CAM.
 
-Key features:
+Key Features:
+- EfficientNet-B0 backbone
+- Transfer learning
+- PyTorch training pipeline
+- Grad-CAM interpretability
 
-EfficientNet-B0 pre-trained on ImageNet
+---
 
-Fine-tuning on trash classification dataset
-
-Grad-CAM visualizations to verify model attention
-
-Data augmentation to handle real-world variability
-
-⚙️ **Technical Approach**
-Component	Choice
-Method	Image Classification
-Model	EfficientNet-B0
-Technique	Transfer Learning
-Training	PyTorch + Colab GPU
-Explainability	Grad-CAM for heatmaps
-
-Why this model?
-EfficientNet-B0 offers strong accuracy-efficiency tradeoff, ideal for student-level hardware while maintaining competitive performance.
-
-🗂 **Dataset Plan**
-
-Dataset: TrashNet-style waste classification dataset
-
-Classes (6): cardboard, glass, metal, paper, plastic, trash
-
+## DATASET PLAN
+Dataset: TrashNet-style
 Total images: ~2527
+Classes: cardboard, glass, metal, paper, plastic, trash
 
-Split: train / validation / test structure
+## Preprocessing:
+- Resize, normalize
+- Convert to tensors
 
-Preprocessing: resize, normalize
+## Augmentation:
+- Random flips
+- Rotations
+- Color jitter
 
-Augmentation: flipping, rotation
+Fallback: Synthetic / Roboflow / Kaggle datasets if needed.
 
-If dataset access fails → fallback to synthetic + online public waste-classification datasets.
+---
 
-✅ **Success Metrics**
+## SUCCESS METRICS
+Accuracy ≥ 90%
+Balanced per-class precision/recall
+Grad-CAM must highlight correct areas
 
-| Metric | Target |
-|--------|--------|
-| Accuracy | ≥ 90% |
-| Per-class Precision / Recall | Balanced across all categories |
-| Explainability | Grad-CAM shows correct focus regions |
+---
 
+## PROJECT TIMELINE
+Week 10 – Dataset + Setup
+Week 11 – Training Baseline
+Week 12 – Performance Improvements
+Week 13 – Grad-CAM + Demo
+Week 14 – Documentation & Polish
+Week 15 – Presentation
 
-📅 **Project Timeline**
+---
 
-| Week | Task | Milestone |
-|------|------|----------|
-| 10 | Dataset preparation & environment setup | ✅ Dataset ready |
-| 11 | Model training & fine-tuning | ✅ Working baseline model |
-| 12 | Evaluation & improvements | ✅ Achieve accuracy target |
-| 13 | Grad-CAM + Demo build | 🎥 System demo ready |
-| 14 | Documentation & polish | 📝 Final report |
-| 15 | Presentation | 🎯 Final delivery |
+## RISKS & MITIGATION
+Low accuracy → Augmentation, LR tuning
+Insufficient data → Roboflow, synthetic data
+Overfitting → Early stopping, dropout
+GPU limits → EfficientNet-B0, batch control
 
+---
 
-⚠️ **Risks & Mitigation**
-| Risk | Probability | Mitigation |
-|------|------------|-----------|
-| Low accuracy | Medium | Data augmentation, adjust LR, freezing strategy |
-| Not enough data | High | Use Roboflow / synthetic fallback |
-| Overfitting | Medium | Early stopping, dropout |
-| Compute limitations | Low | Google Colab GPU, efficient model |
+## REQUIRED RESOURCES
+Compute: Google Colab GPU
+Frameworks: PyTorch, Torchvision
+Explainability: Grad-CAM
+Cost: $0
 
+---
 
-
-🧰 **Required Resources**
-
-| Resource | Details |
-|---------|--------|
-| Compute | Google Colab GPU |
-| Frameworks | PyTorch, Torchvision |
-| Explainability | Grad-CAM |
-| Cost | $0 |
-
-
-### 📂 Repository Structure
-Waste-Classification-CV/
-├── README.md                
-
-├── requirements.txt        
-
-│
-├── notebooks/
-
-│   └── 01_exploration.ipynb  
-
-│
+REPOSITORY STRUCTURE
+.
 ├── data/
+│   └── README.md
+├── models/
+│   ├── trained/
+│   └── README.md
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   └── README.md
+├── results/
+│   └── README.md
+├── requirements.txt
+├── docs/
+│   └── MD_Tuozzo_Jose_ITAI1378.pdf
+├── AI_usage_log.md
+└── README.md
 
-│   └── README.md          
+---
 
-│
-└── docs/
+## HOW TO RUN THE PROJECT
+1. Clone:
+   git clone https://github.com/jtuozzo1616/Midterm---Final-Project-Proposal.git
+   cd Midterm---Final-Project-Proposal
+   pip install -r requirements.txt
 
-    └── MD_Tuozzo_Jose_ITAI1378.pdf  
+2. Open:
+   notebooks/01_data_exploration.ipynb  
+   (Run in Google Colab w/ GPU)
 
+3. Provide dataset manually or via Roboflow.
 
+4. Run entire notebook:
+   - Loads dataset  
+   - Trains EfficientNet-B0  
+   - Outputs evaluation metrics  
+   - Produces Grad-CAM heatmaps  
 
-### Tier Selection
-**Tier 1 – Image Classification**
+---
 
-Justification: This project focuses on multi-class waste classification using a publicly available dataset and EfficientNet-B0. Training is feasible within course time using Google Colab, making Tier 1 the appropriate scope.
+## PERFORMANCE EVALUATION (SUMMARY)
+Replace TODO with your real metrics.
 
+Validation Accuracy: TODO
+Test Accuracy: TODO
+Common confusions: paper vs cardboard, plastic vs metal
 
-🤖 **AI Usage Log**
+Grad-CAM:
+- Correct predictions focus on the waste item
+- Wrong predictions focus on background or edges
 
-I used ChatGPT to help refine the written proposal structure and clarify the Grad-CAM explanation.
-All model development, code execution, and debugging were performed by me.
+Artifacts in:
+results/loss_curve.png
+results/confusion_matrix.png
+results/gradcam_examples/
 
-🌎 **Expected Impact**
+---
 
-Improves sorting accuracy
+## FUTURE WORK
+- Stronger backbones (EfficientNet-B2 / ResNet-50)
+- Additional augmentation
+- Deploy via ONNX / TorchScript
+- Build Gradio / Streamlit UI
+- Expand dataset diversity
 
-Supports sustainability initiatives
+---
 
-Reduces processing waste and contamination
+## AI USAGE (SUMMARY)
+AI was used for:
+- Documentation structuring
+- README formatting
+- Concept clarification
 
-Foundation for future smart recycling bins or robotic sorters
+All coding, dataset management, training, and debugging were done manually.
 
-✅ **Quickstart Guide for Running the Project (add to README)**
-### 🚀 How to Run
+Full log:
+AI_usage_log.md
 
-1) Clone the repository
+---
 
-git clone https://github.com/jtuozzo1616/Midterm---Final-Project-Proposal.git
-cd Midterm---Final-Project-Proposal
-pip install -r requirements.txt
-
-
-2) Install dependencies  
-
-3) Open the notebook  
-
-4) Run cells in Google Colab or Jupyter.  
-
-5) Upload dataset when prompted or connect to Roboflow dataset.
-
-✅ Model will train  
-✅ Metrics will print  
-✅ Grad-CAM heatmaps will show model focus  
-
-### AI Usage Log
-- Used ChatGPT only for formatting suggestions and rubric alignment.
-- All code, training, testing, and model experimentation will be completed by me.
-
-
+## EXPECTED IMPACT
+- Improves sorting accuracy
+- Reduces contamination
+- Supports sustainability initiatives
+- Provides foundation for smart recycling bins or robotic sorters
