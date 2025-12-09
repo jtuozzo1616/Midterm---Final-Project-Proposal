@@ -1,1 +1,76 @@
+# 🎥 Final Project Demonstration Video  
+**Course:** ITAI 1378 – Computer Vision & AI  
+**Student:** José Tuozzo  
+**Project:** Waste Classification Using Computer Vision  
+**Project Tier:** Tier 1 — Image Classification  
+
+---
+
+## 🎬 Overview
+
+This video demonstrates the complete functionality of the **Waste Classification AI System**, including:
+
+- The model architecture (EfficientNet-B0)
+- Dataset preprocessing
+- Real inference on new images
+- Grad-CAM heatmaps for interpretability
+- System workflow inside Google Colab
+
+The demo follows the official requirements in the **Final Project Guide**, which states that the submission must include a *demonstration video showing the system working*.
+
+---
+
+## 📌 What the Video Shows
+
+### 🔹 1. Notebook Structure
+A walkthrough of the main notebook (`01_data_exploration.ipynb`), highlighting:
+- Project description
+- Dataset setup
+- Model definition
+- Training pipeline
+
+### 🔹 2. Loading the Model
+The video shows the section where EfficientNet-B0 is loaded and fine-tuned.
+
+### 🔹 3. Preprocessing & Transformations
+Includes:
+- Resize  
+- Normalize  
+- Data augmentation  
+
+### 🔹 4. Real-Time Prediction
+The system receives an uploaded image and outputs:
+- Predicted class  
+- Confidence score  
+
+### 🔹 5. Grad-CAM Visualization
+A heatmap overlay shows where the model focuses to make the prediction.
+
+### 🔹 6. Second Example (Consistency Test)
+An optional second image is tested to demonstrate prediction stability.
+
+---
+
+## ▶️ Watch the Video
+
+**Video Link:**  
+👉 *https://youtu.be/I6dvVU9D-4c*  
+
+---
+
+## 🧠 Why This Video Matters
+
+The demonstration confirms:
+
+- The model works correctly  
+- It performs inference on unseen images  
+- It provides visual explanations (Grad-CAM)  
+- The system can be used in real applications  
+
+This fulfills the **35% Final Project requirement** for an in-class demonstration.
+
+---
+
+## 📁 Related Files in This Repository
+
 
